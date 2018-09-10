@@ -1,0 +1,23 @@
+{{! 
+	
+	BLOG PROFILE
+	- Configuration of this file is not required. 
+
+}}
+
+	<div class="profile">
+		{{#get "users" slug="jonathan" as |author|}}
+                  {{#author}}
+                    {{#if profile_image}}<img src="{{profile_image}}" class="profileimage" alt="name">{{/if}}
+                  {{/author}}
+                {{/get}}
+                <h4>{{@blog.title}}</h4>
+            <ul class="socialside">
+                <li><a href="http://twitter.com/jonathanfries" class="smallsocial twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="http://linkedin.com/in/jonathanfries" class="smallsocial linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="http://github.com/jonathan-fries" class="smallsocial github" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="{{@blog.url}}/rss/" class="smallsocial rss" target="_blank"><i class="fa fa-rss"></i></a></li>
+            </ul>
+		<p>{{@blog.description}}</p>
+		<hr>
+	</div>
