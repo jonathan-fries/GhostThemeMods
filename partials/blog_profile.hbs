@@ -7,9 +7,9 @@
 
 	<div class="profile">
 		{{#get "users" slug="jonathan" as |author|}}
-                  {{#primary_author}}
+                  {{#author}}
                     {{#if profile_image}}<img src="{{profile_image}}" class="profileimage" alt="name">{{/if}}
-                  {{/primary_author}}
+                  {{/author}}
                 {{/get}}
                 <h4>{{@blog.title}}</h4>
             <ul class="socialside">
