@@ -1,7 +1,7 @@
 var config = {
     // Disqus Shortname (http://disqus.com)
     // Options: Shortname / Blank ('') (Disabled)
-    'disqus_shortname': 'ecko',
+    'disqus_shortname': 'jonathanfries-net',
     // Google Comments (http://google.com)
     // Options: true / false
     'google_comments': true,
